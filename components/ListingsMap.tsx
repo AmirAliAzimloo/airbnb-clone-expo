@@ -61,8 +61,8 @@ const ListingsMap = memo(({ listings }: Props) => {
       <Marker
         key={`cluster-${id}`}
         coordinate={{
-          longitude: geometry.coordinates[0],
-          latitude: geometry.coordinates[1],
+          longitude: +geometry.coordinates[0],
+          latitude: +geometry.coordinates[1],
         }}
         onPress={onPress}>
         <View style={styles.marker}>
@@ -89,13 +89,14 @@ const ListingsMap = memo(({ listings }: Props) => {
         clusterColor="#fff"
         clusterTextColor="#000"
         clusterFontFamily="mon-sb"
-        renderCluster={renderCluster}>
+        renderCluster={renderCluster}
+        >
         {/* Render all our marker as usual */}
         {listings.features.map((item: any) => (
           <Marker
             coordinate={{
-              latitude: item.properties.latitude,
-              longitude: item.properties.longitude,
+              latitude: +item.properties.latitude,
+              longitude: +item.properties.longitude,
             }}
             key={item.properties.id}
             onPress={() => onMarkerSelected(item)}>
@@ -137,7 +138,8 @@ const styles = StyleSheet.create({
   },
   locateBtn: {
     position: 'absolute',
-    top: 70,
+    // top: 70,
+    top: 30,
     right: 20,
     backgroundColor: '#fff',
     padding: 10,
