@@ -138,8 +138,7 @@ const styles = StyleSheet.create({
   },
   locateBtn: {
     position: 'absolute',
-    // top: 70,
-    top: 30,
+    top: 70,
     right: 20,
     backgroundColor: '#fff',
     padding: 10,

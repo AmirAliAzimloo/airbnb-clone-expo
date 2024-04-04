@@ -95,7 +95,7 @@ function RootLayoutNav() {
       <Stack.Screen
         name="(modals)/booking"
         options={{
-          presentation: 'transparentModal',
+          presentation: 'modal',
           animation: 'fade',
           headerTransparent: true,
           headerTitle: (props) => <ModalHeaderText />,

@@ -17,7 +17,7 @@ const Page = () => {
   };
 
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1, marginTop: -50 }}>
       {/* Define pour custom header */}
       <Stack.Screen
         options={{
