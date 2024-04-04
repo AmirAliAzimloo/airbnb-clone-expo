@@ -42,7 +42,7 @@ const Listings = ({ listings: items, refresh, category }: Props) => {
       <TouchableOpacity>
         <Animated.View style={styles.listing} entering={FadeInRight} exiting={FadeOutLeft}>
           <Animated.Image 
-          source={require('../assets/images/house.png')}
+          source={require('../assets/house.png')}
           // source={{
           //   uri: item.medium_url
           // }}

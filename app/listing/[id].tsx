@@ -93,7 +93,7 @@ const DetailsPage = () => {
         >
         <Animated.Image
           // source={{ uri: listing.xl_picture_url }}
-          source={require('../../assets/images/house.png')}
+          source={require('../../assets/house.png')}
           style={[styles.image, imageAnimatedStyle]}
           resizeMode="cover"
         />
@@ -118,7 +118,7 @@ const DetailsPage = () => {
           <View style={styles.hostView}>
             <Image 
             // source={{ uri: listing.host_picture_url }}
-            source={require('../../assets/images/house.png')}
+            source={require('../../assets/house.png')}
              style={styles.host} />
 
             <View>
